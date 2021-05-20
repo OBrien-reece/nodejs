@@ -3,6 +3,16 @@ const getNotes = function() {
     return "Your notes are........"
 }
 
+//Remove Notes
+const removeNotes = function(title){
+    console.log(title)
+}
+
+
+
+
+//Add Notes
+
 const addNotes = function(title,body){
     const notes = loadNotes()
 
@@ -48,5 +58,6 @@ const loadNotes = function(){
 //export two diff objects
 module.exports = {
     getNotes: getNotes,
-    addNotes: addNotes
+    addNotes: addNotes,
+    removeNotes: removeNotes
 }
